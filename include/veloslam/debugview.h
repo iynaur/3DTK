@@ -5,7 +5,7 @@
 #include "veloslam/veloscan.h"
 #include "veloslam/tracker.h"
 
-#ifdef TARGET_OS_MAC
+#ifdef __APPLE__
 #include <GL/glew.h>
 #include <Gl/glui.h>
 #else
