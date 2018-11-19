@@ -16,7 +16,7 @@
 #ifdef _MSC_VER
 #include <GL/glut.h>
 #else
-#ifndef TARGET_OS_MAC
+#ifndef __APPLE__
 #include <GL/freeglut.h>
 #endif
 #endif
