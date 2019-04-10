@@ -153,7 +153,7 @@ int main()
 				 * We remove another digit of precision to make MacOS happy...
 				 */
 				if (mindist != std::numeric_limits<double>::infinity()) {
-					std::fprintf(fnobox, "%.10f %.10f %.10f 0\n", -miny+o_y, minz-o_z, minx-o_x);
+					std::fprintf(fnobox, "%.09f %.09f %.09f 0\n", -miny+o_y, minz-o_z, minx-o_x);
 				}
 				for (auto p: box) {
 					double x, y, z;
@@ -166,7 +166,7 @@ int main()
 					}
 				}
 				if (mindist != std::numeric_limits<double>::infinity()) {
-					std::fprintf(fbox, "%.10f %.10f %.10f 0\n", -miny+o_y, minz-o_z, minx-o_x);
+					std::fprintf(fbox, "%.09f %.09f %.09f 0\n", -miny+o_y, minz-o_z, minx-o_x);
 				}
 			}
 		}
